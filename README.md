@@ -1,5 +1,5 @@
 # phab-analytics
-Run analytics on Uber Phabricator users to determine things like monthly diff counts.
+Run analytics on Uber Phabricator users to determine things like monthly diff/review counts.
 
 ## Usage
 
