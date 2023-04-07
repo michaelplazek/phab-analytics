@@ -4,8 +4,7 @@ import readline from "readline";
 
 const apiToken = process.env.API_TOKEN;
 const bearerToken = process.env.BEARER_TOKEN;
-
-const phabUrl = "https://code.uberinternal.com";
+const baseURl = process.env.BASE_URL;
 
 export const rl = readline.createInterface({
   input: process.stdin,
@@ -16,7 +15,7 @@ export const prompt = (query) =>
   new Promise((resolve) => rl.question(query, resolve));
 
 function getConduitUrl(endpoint) {
-  return `${phabUrl}/api/${endpoint}`;
+  return `${baseURl}/api/${endpoint}`;
 }
 
 async function callConduit(endpoint, params) {

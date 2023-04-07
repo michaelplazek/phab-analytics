@@ -4,7 +4,7 @@ Run analytics on Uber Phabricator users to determine things like monthly diff/re
 ## Usage
 
 ### Configuring credentials
-This script uses both an API token from Phabricator and a uSSO bearer token for Uber auth to make calls the the Uber Phabricator instance.
+This script uses both an API token from Phabricator and an SSO bearer token for auth to make calls to the Phabricator instance.
 
 #### Set `API_TOKEN`
 1. Go to Phabricator > Settings > Conduit API Tokens: https://code.uberinternal.com/settings/user/{your-username}/page/apitokens
@@ -16,4 +16,5 @@ This script uses both an API token from Phabricator and a uSSO bearer token for 
 2. Run the following command: `export BEARER_TOKEN=$(usso -print -ussh code.uberinternal.com 2>&1 | tail -n 1)`
 
 ### Starting the app
-Run `npm install && npm start`
+1. Set the `BASE_URL` of the Phabricator instance: `export BASE_URL="https://code.uberinternal.com"`
+2. Run `npm install && npm start`
