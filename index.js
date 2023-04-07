@@ -71,25 +71,25 @@ async function handleAverageDiffsOption(username, userPhid) {
   } = calculateSegmentedMonthlyAverages(diffs);
   console.log(`\nAverage Diff Count for ${username} (${userPhid})\n`);
   console.log(
-    `Entire historical average number of monthly diffs: ${averageDiffs.toFixed(
+    `Average monthly diffs: ${averageDiffs.toFixed(
       2
     )}`
   );
   console.log(
-    `Average number of diffs in last month: ${averagePastMonth.toFixed(2)}`
+    `Number of diffs last month: ${averagePastMonth.toFixed(2)}`
   );
   console.log(
-    `Average number of diffs in last 3 months: ${averagePastThreeMonths.toFixed(
+    `Average monthly diffs over last 3 months: ${averagePastThreeMonths.toFixed(
       2
     )}`
   );
   console.log(
-    `Average number of diffs in last 6 months: ${averagePastSixMonths.toFixed(
+    `Average monthly diffs over last 6 months: ${averagePastSixMonths.toFixed(
       2
     )}`
   );
   console.log(
-    `Average number of diffs in last year: ${averagePastYear.toFixed(2)}`
+    `Average monthly diffs over last year: ${averagePastYear.toFixed(2)}`
   );
   rl.close();
 }
@@ -105,25 +105,25 @@ async function handleAverageReviewsOption(username, userPhid) {
   } = calculateSegmentedMonthlyAverages(reviews);
   console.log(`\nAverage Review Count for ${username} (${userPhid})\n`);
   console.log(
-    `Entire historical average number of monthly reviews: ${averageReviews.toFixed(
+    `Average monthly reviews: ${averageReviews.toFixed(
       2
     )}`
   );
   console.log(
-    `Average number of reviews in last month: ${averagePastMonth.toFixed(2)}`
+    `Number of reviews last month: ${averagePastMonth.toFixed(2)}`
   );
   console.log(
-    `Average number of reviews in last 3 months: ${averagePastThreeMonths.toFixed(
+    `Average monthly reviews over last 3 months: ${averagePastThreeMonths.toFixed(
       2
     )}`
   );
   console.log(
-    `Average number of reviews in last 6 months: ${averagePastSixMonths.toFixed(
+    `Average monthly reviews over last 6 months: ${averagePastSixMonths.toFixed(
       2
     )}`
   );
   console.log(
-    `Average number of reviews in last year: ${averagePastYear.toFixed(2)}`
+    `Average monthly reviews over last year: ${averagePastYear.toFixed(2)}`
   );
   rl.close();
 }
