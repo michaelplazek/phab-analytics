@@ -2,6 +2,7 @@
 Run analytics on Phabricator users to determine things like monthly diff/review counts.
 
 ## Usage
+This script requires [NodeJS](https://nodejs.dev/en/download/) to be installed.
 
 ### Configuring credentials
 This script uses both an API token from Phabricator and an SSO bearer token for auth to make calls to the Phabricator instance.
